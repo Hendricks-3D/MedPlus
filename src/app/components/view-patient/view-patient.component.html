@@ -1,0 +1,37 @@
+<div class="limiter">
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100">
+                <table>
+                    <thead>
+                        <tr class="table100-head">
+                            <th class="column1">PatientID</th>
+                            <th class="column2">TRN</th>
+                            <th class="column3">Name</th>
+                            <th class="column4">Gender</th>
+                            <th class="column5">Occupation</th>
+                            <th class="column6">Address</th>
+                            <th class="column6">Parish</th>
+                            <th class="column6">DOB</th>
+                            <th class="column6">Land Mark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let patient of patientRef$ | async">
+                            <td class="column1">{{patient.patientId}}</td>
+                            <td class="column2">{{patient.patientTRN}}</td>
+                            <td class="column3">{{patient.patientName}}</td>
+                            <td class="column4">{{patient.patientGender}}</td>
+                            <td class="column5">{{patient.patientOccupation}}</td>
+                            <td class="column6">{{patient.patientAddress}}</td>
+                            <td class="column6">{{patient.patientParish}}</td>
+                            <td class="column6">{{patient.patientDOB}}</td>
+                            <td class="column6">{{patient.patientLandmark}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
